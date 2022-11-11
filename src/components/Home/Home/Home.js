@@ -3,6 +3,7 @@ import React from 'react';
 
 
 import AllServices from '../AllServices/AllServices';
+import Features from '../Features/Features';
 import HeroSection from '../HeroSection/HeroSection';
 
 
@@ -11,7 +12,7 @@ const Home = () => {
         <div>
             <HeroSection></HeroSection>
            
-           
+           <Features></Features>
             <AllServices></AllServices>
             
             

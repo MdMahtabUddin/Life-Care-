@@ -19,14 +19,28 @@ const AllServices = () => {
     }, [])
 
     return (
-        <div id="ourservices">
-            <h2 className="my-3 text-center">
-                <span className="border-success border-2 border-bottom">
-                    Our Services
-                </span>
-            </h2>
+        <section id="section-sm lg:section-lg">
+            <div className='container mx-auto'>
 
-            <div className="container" >
+            <div className='text-center mb-16 lg:mb-32'>
+          <h2
+            className='h2 mb-3 lg:mb-[18px]'
+            data-aos='fade-down'
+            data-aos-delay='200'
+          >
+            Popular Courses
+          </h2>
+          <p
+            className='max-w-[480px] mx-auto'
+            data-aos='fade-down'
+            data-aos-delay='300'
+          >
+            Practice anywhere, anytime. Explore a new way to exercise and learn
+            more about yourself. We are providing the best.
+          </p>
+        </div>
+
+            <div className="flex flex-col lg:flex-row lg:gap-x-[33px] gap-y-24 mb-7 lg:mb-14container" >
                 {
                     services.length === 0 ?
                         <Loading></Loading>
@@ -38,16 +52,18 @@ const AllServices = () => {
                         </div>
                 }
             </div>
+            </div>
+            
 
-            <div className="text-center text-secondary" data-aos="fade-up">
+            {/* <div className="text-center text-secondary" data-aos="fade-up">
                 
                 
                 <p >
                     
                 </p>
-            </div>
+            </div> */}
 
-        </div>
+        </section>
     );
 };
 

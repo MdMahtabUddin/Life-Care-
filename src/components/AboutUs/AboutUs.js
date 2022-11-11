@@ -1,39 +1,53 @@
 import React from 'react';
 import './AboutUs.css';
-
-import womenAboutUsImg from '../../images/women-about-us.jpg';
+import about from './data'
+// import womenAboutUsImg from '../../images/women-about-us.jpg';
 
 
 
 const AboutUs = () => {
 
 
-
+  const { subtitle1, subtitle2} = about;
     return (
-        <div>
-        <div className="banner-container">
-          <div className="row d-flex align-items-center justify-content-center">
-            <div className="col-md-6">
-              <img className="w-100 m-2" src={womenAboutUsImg} alt="" />
-            </div>
-            <div className="col-md-6 p-5">
-              <h1 className="my-5 text-success">About Us</h1>
-              <p>
-                About Us! Life & Care Hospital was established in 2021.
-                It is one of the speciality and superspeciality hospital which
-                extends medical care to patient in a very friendly and homely
-                environment.
-                <br />
-                We at Royal Multispeciality Hospital believe that any person in
-                need of medical help comes to a doctor/hospital with high
-                expectations, hoping that he will be relieved of distress and
-                treated with compassion and care.
-              </p>
-              <button className="btn btn-dark m-auto">Find out how</button>
-            </div>
-          </div>
+      <section className='py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px]'>
+      <div className='container mx-auto px-[20px] lg:px-[135px]'>
+        
+        <div
+          className='section-title-group justify-start'
+          data-aos='fade-up'
+          data-aos-delay='100'
+        >
+          {/* <img src={icon} alt='' />
+          <h2 className='h2 section-title'>
+            {title} <span className='text-primary-200'>.</span>
+          </h2> */}
+        </div>
+        <p
+          className='md:text-body-md mb-12'
+          data-aos='fade-up'
+          data-aos-delay='200'
+        >
+          {subtitle1}
+        </p>
+        <p
+          className='md:text-body-md mb-8'
+          data-aos='fade-up'
+          data-aos-delay='300'
+        >
+          {subtitle2}
+        </p>
+        <div data-aos='fade-up' data-aos-delay='400'>
+          {/* <a
+            className='link flex items-center gap-x-4 hover:gap-x-6 transition-all'
+            href='#'
+          >
+            {link}
+            <IoIosArrowDroprightCircle className='text-2xl' />
+          </a> */}
         </div>
       </div>
+    </section>
     );
 };
 

@@ -1,50 +1,34 @@
 import React from 'react';
-import './AboutUs.css';
-import about from './data'
-// import womenAboutUsImg from '../../images/women-about-us.jpg';
-
+import { about } from '../../data';
 
 
 const AboutUs = () => {
-
-
-  const { subtitle1, subtitle2} = about;
+  const { image, title, subtitle } = about;
     return (
-      <section className='py-[80px] md:py-[110px] lg:pt-[140px] lg:pb-[180px]'>
-      <div className='container mx-auto px-[20px] lg:px-[135px]'>
-        
-        <div
-          className='section-title-group justify-start'
-          data-aos='fade-up'
-          data-aos-delay='100'
-        >
-          {/* <img src={icon} alt='' />
-          <h2 className='h2 section-title'>
-            {title} <span className='text-primary-200'>.</span>
-          </h2> */}
-        </div>
-        <p
-          className='md:text-body-md mb-12'
-          data-aos='fade-up'
-          data-aos-delay='200'
-        >
-          {subtitle1}
-        </p>
-        <p
-          className='md:text-body-md mb-8'
-          data-aos='fade-up'
-          data-aos-delay='300'
-        >
-          {subtitle2}
-        </p>
-        <div data-aos='fade-up' data-aos-delay='400'>
-          {/* <a
-            className='link flex items-center gap-x-4 hover:gap-x-6 transition-all'
-            href='#'
-          >
-            {link}
-            <IoIosArrowDroprightCircle className='text-2xl' />
-          </a> */}
+      <section
+      className='my-[30px] xl:mt-[100px]'
+      data-aos='fade-up'
+    
+    >
+      <div className='container mx-auto '>
+        <div className='bg-accent-secondary/[15%] rounded-[50px] min-h-[560px] px-12 pb-12 flex flex-col text-center xl:flex-row xl:items-center xl:text-left  xl:gap-x-[60px] xl:pb-0'>
+          {/* image */}
+          <div className='flex-1' data-aos='zoom-in-left'>
+            <img src={image} alt='' />
+          </div>
+          {/* text */}
+          <div className='flex-1 xl:pr-12'>
+            <h2 className='h2 mb-10 decoration-4' data-aos='fade-up' data-aos-delay='300'>
+              {title}
+            </h2>
+            <p
+              className='max-w-[474px] mx-auto xl:mx-0'
+              data-aos='fade-up'
+              data-aos-delay='100'
+            >
+              {subtitle}
+            </p>
+          </div>
         </div>
       </div>
     </section>

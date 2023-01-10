@@ -162,7 +162,7 @@ const Login = () => {
 
 
     return (
-        <div className="container-fluid login-page py-5">
+        <div className="container-fluid login-page py-5" data-aos='fade-up'>
 
             <div className="row d-flex flex-column justify-content-center align-items-center">
                 <div className="col-md-6">

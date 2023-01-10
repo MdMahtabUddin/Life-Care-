@@ -5,7 +5,7 @@ const OurTeam = () => {
     return (
         <div container-fluid p-0>
             
-            <div className="container text-secondary">
+            <div className="container text-secondary"data-aos='fade-up'>
                 <h2 className="text-center mt-5">MEET OUR DOCTORS</h2>
 
                 <div>

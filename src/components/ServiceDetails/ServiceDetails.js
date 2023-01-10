@@ -38,16 +38,17 @@ const ServiceDetails = () => {
             </div>
 
             <div className="container py-5 text-secondary">
+                
+                <div className="mb-3">
+                    <img className="img-fluid" src={image} alt="" style={{ height: 350 }} />
+                </div>
                 <div>
                     
                     <p>
                         {serviceDetail}
                     </p>
                 </div>
-                <div className="mb-3">
-                    <img className="img-fluid" src={image} alt="" style={{ height: 500 }} />
-                </div>
-                <h4 className="lh-lg fw-bold">{name}</h4>
+                {/* <h4 className="lh-lg fw-bold">{name}</h4> */}
                 <p className="lh-base">{description}</p>
             </div>
         </div>

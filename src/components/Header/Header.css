@@ -10,6 +10,7 @@ li {
 .cool-link {
     display: inline-block;
     text-decoration: none;
+
 }
 
 .cool-link::after {
@@ -17,7 +18,7 @@ li {
     display: block;
     width: 0;
     height: 2px;
-    background: #0E6832;
+    background: #c8ef54;
     transition: width .4s;
 }
 

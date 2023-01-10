@@ -22,25 +22,24 @@ const AllServices = () => {
         <section id="section-sm lg:section-lg">
             <div className='container mx-auto'>
 
-            <div className='text-center mb-16 lg:mb-32'>
+            <div className='text-center  mb-16 lg:mb-32'>
           <h2
-            className='h2 mb-3 lg:mb-[18px]'
+            className='h2 mb-3 mt-5  lg:mb-[18px]'
             data-aos='fade-down'
             data-aos-delay='200'
           >
-            Popular Courses
+            OUR Departments
           </h2>
           <p
             className='max-w-[480px] mx-auto'
             data-aos='fade-down'
             data-aos-delay='300'
           >
-            Practice anywhere, anytime. Explore a new way to exercise and learn
-            more about yourself. We are providing the best.
+             We are providing the best.
           </p>
         </div>
 
-            <div className="flex flex-col lg:flex-row lg:gap-x-[33px] gap-y-24 mb-7 lg:mb-14container" >
+            <div className="flex flex-col lg:flex-row lg:gap-x-[33px] gap-y-12 mb-7 lg:mb-14container" >
                 {
                     services.length === 0 ?
                         <Loading></Loading>
@@ -55,13 +54,7 @@ const AllServices = () => {
             </div>
             
 
-            {/* <div className="text-center text-secondary" data-aos="fade-up">
-                
-                
-                <p >
-                    
-                </p>
-            </div> */}
+            
 
         </section>
     );

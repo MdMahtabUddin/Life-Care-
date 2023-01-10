@@ -19,13 +19,13 @@ const Header = () => {
     return (
         <div className="sticky-top">
             
-            <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <nav className="navbar navbar-expand-lg  bg-green-700 shadow-sm">
                 <div className="container">
-                <h5>Life & Care Hospital</h5>
+                <h5><span className='font-sans text-3xl text-yellow-400'>LIFE Care</span></h5>
                     <Link to="/home">
                         
                     </Link>
-                    {/* <HashLink to="/home#ourservices">Link to Hash Fragment</HashLink> */}
+                    <HashLink to="/home#ourservices"></HashLink>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@ const Header = () => {
                         </ul>
                         <ul className=" d-flex align-items-center navbar-nav ms-auto mb-2 mb-lg-0">
                             
-                        <li className="nav-item cool-link">
+                        <li className="nav-item  cool-link  ">
                                 <Link to="/" className="nav-link">HOME</Link>
                             </li>
                             <li className="nav-item cool-link">
@@ -54,7 +54,7 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item cool-link">
-                                <Link to="/about" className="nav-link">ABOUT US</Link>
+                                {/* <Link to="/about" className="nav-link">ABOUT US</Link> */}
                             </li>
                             
                             

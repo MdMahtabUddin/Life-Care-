@@ -31,7 +31,7 @@ const MyForm = () => {
 
     return (
         <form onSubmit={handleFormSubmit}>
-            <div className="mb-3 form-group">
+            <div className="mb-3 form-group"data-aos='fade-up'>
                 <input value={displayName} type="text" name="name" id="name" className="form-control" placeholder="Your Name " required />
             </div>
 

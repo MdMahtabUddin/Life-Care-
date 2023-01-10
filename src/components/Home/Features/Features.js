@@ -1,69 +1,55 @@
 import React from 'react';
-import doctors from '../../../images/doctors.png'
+// import help from '../../../images/helpline.jpeg'
+// import ambulace from '../../../images/ambulance.jpeg'
+
+
 
 const Features = () => {
     return (
-        <section
-      className='bg-cardsBg min-h-[260px] pb-[55px] lg:-mt-24'
-      data-aos='fade-up'
-      data-aos-delay='800'
-      data-aos-duration='1600'
-    >
-      <div className='container mx-auto flex flex-col lg:flex-row gap-x-[32px]'>
-        {/* card group */}
-        <div className='flex-1 flex gap-x-[15px] lg:gap-x-[32px] -mt-[38px] lg:-mt-[77px] z-10 mx-auto'>
-          {/* card 1 */}
-          <div
-            className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md max-h-[282px]'
-            data-aos='fade-up'
-            data-aos-delay='400'
-          >
-            <div className='flex items-center mb-[18px] lg:mb-[28px]'>
-              <h4 className='text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8'>
-                Make Your Own Plan For Yoga.
-              </h4>
-              <h2 className='h2 text-stroke-2'>1</h2>
-            </div>
-            <div>
-              <img src={doctors} alt='' />
-            </div>
+        
+      <section class="text-gray-600 body-font bg-green-600 ">
+  <div class="container px-5 pb-45 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 lg:w-1/2 md:w-full">
+        <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+          <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
           </div>
-          {/* card 2 */}
-          <div
-            className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md'
-            data-aos='fade-up'
-            data-aos-delay='600'
-          >
-            <div className='flex items-center mb-[18px] lg:mb-[28px]'>
-              <h4 className='text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8'>
-                Find a Yoga Mentor For You.
-              </h4>
-              <h2 className='h2 text-stroke-2'>2</h2>
-            </div>
-            <div>
-              <img src={doctors} alt='' />
-            </div>
-          </div>
-          <div
-            className='bg-white w-full max-w-[282px] p-[14px] lg:p-[26px] shadow-2xl rounded-md'
-            data-aos='fade-up'
-            data-aos-delay='600'
-          >
-            <div className='flex items-center mb-[18px] lg:mb-[28px]'>
-              <h4 className='text-lg lg:text-2xl lg:leading-7 font-bold text-heading mr-8'>
-                Find a Yoga Mentor For You.
-              </h4>
-              <h2 className='h2 text-stroke-2'>2</h2>
-            </div>
-            <div>
-              <img src={doctors} alt='' />
-            </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 text-yellow-400 text-lg">24 Hours Ambulance Service</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+            {/* <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a> */}
           </div>
         </div>
-        {/* card 3 */}
-       
       </div>
-    </section>
+      <div class="p-4 lg:w-1/2 md:w-full">
+        <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+          <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3 text-yellow-400 text-lg">24 Hours ICU Supports</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+            {/* <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a> */}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     );
 };
 

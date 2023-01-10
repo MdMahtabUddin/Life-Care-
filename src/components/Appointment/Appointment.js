@@ -8,7 +8,7 @@ import { faPhoneAlt, faMobileAlt, faFax, faEnvelope } from '@fortawesome/free-so
 
 const Appointment = () => {
     return (
-        <div className="container-fluid p-0">
+        <div className="container-fluid p-0"data-aos='fade-up'>
             
                 <div className="text-center" data-aos="fade-down">
                     <h2 className="fw-bold page-title fs-1">Appointment</h2>
